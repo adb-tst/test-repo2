@@ -13,7 +13,7 @@ auto_cancel:
   queued:
     when: branch = 'main'
 blocks:
-  - name: "\U0001F9EA Test"
+  - name: "\U0001F9EA Test 2"
     dependencies: []
     task:
       jobs:
