@@ -13,12 +13,13 @@ auto_cancel:
   queued:
     when: branch = 'main'
 blocks:
-  - name: "\U0001F9EA Test 6"
+  - name: "\U0001F9EA Test 2"
     dependencies: []
     task:
       jobs:
         - name: "\U0001F7E2 Run Tests"
           commands:
+            - checkout
             - echo "Checking out code..."
             - echo "Installing dependencies..."
             - echo "Running test suite..."
