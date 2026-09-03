@@ -1,0 +1,17 @@
+version: v1.0
+name: sanitize-repro
+agent:
+  machine:
+    type: s1-ubuntu-local
+
+blocks:
+  - name: repro
+    task:
+      env_vars:
+        - name: REPRO_MARKER
+          value: findme-12345
+      jobs:
+        - name: hold
+          commands:
+            - echo "$SEMAPHORE_JOB_ID"
+            - sleep 300
