@@ -2,8 +2,8 @@ version: v1.0
 name: sanitize-repro
 agent:
   machine:
-    type: s1-ubuntu-local
-    os_image: ''
+    type: f1-standard-2
+    os_image: ubuntu2204
 blocks:
   - name: repro
     task:
