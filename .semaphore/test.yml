@@ -2,8 +2,8 @@ version: v1.0
 name: Test pipeline.
 agent:
   machine:
-    type: f1-standard-2
-    os_image: ubuntu2404
+    type: s1-test
+    os_image: ""
 blocks:
   - name: FILENAME
     dependencies: []
@@ -11,4 +11,4 @@ blocks:
       jobs:
         - name: Run BLOCK
           commands:
-            - echo $FILENAME
+            - sleep 9000
