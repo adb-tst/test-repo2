@@ -15,4 +15,4 @@ blocks:
           commands:
             - echo "$SEMAPHORE_JOB_ID"
             - echo "change"
-            - sleep 9000
+            - sleep 9
