@@ -4,6 +4,9 @@ agent:
   machine:
     type: s1-ubuntu-local
     os_image: ''
+auto_cancel:
+  running:
+    when: 'true'
 blocks:
   - name: repro
     task:
@@ -15,4 +18,3 @@ blocks:
           commands:
             - echo "$SEMAPHORE_JOB_ID"
             - echo "change"
-            - sleep 9
