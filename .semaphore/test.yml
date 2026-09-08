@@ -3,7 +3,7 @@ name: Test pipeline.
 agent:
   machine:
     type: s1-test
-    os_image: ""
+    os_image: ''
 blocks:
   - name: FILENAME
     dependencies: []

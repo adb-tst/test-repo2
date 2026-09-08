@@ -14,4 +14,4 @@ blocks:
         - name: hold
           commands:
             - echo "$SEMAPHORE_JOB_ID"
-            - '"false"'
+            - sleep 9000
