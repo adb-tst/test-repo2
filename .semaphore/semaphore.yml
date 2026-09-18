@@ -12,10 +12,6 @@ auto_cancel:
     when: branch != 'main'
   queued:
     when: branch = 'main'
-global_job_config:
-  prologue:
-    commands:
-      - sem-service start mysql 8.4
 blocks:
   - name: "\U0001F9EA Test 2"
     dependencies: []
@@ -28,3 +24,6 @@ blocks:
             - echo "Installing dependencies..."
             - echo "Running test suite..."
             - echo "Tests completed successfully! =====--==="
+        - name: mysql sem-version
+          commands:
+            - sem-service start mysql 8
